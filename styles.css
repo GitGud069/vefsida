@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    margin: 0 auto;
+    grid-template-areas: "HAUS", "MEGIN", "FOTUR";
+}
+
+.haus {
+    grid-area: "HAUS";
+}
+
+.meginmal {
+    grid-area: "MEGIN";
+    min-height: 100vh;
+}
+
+.fotur {
+    grid-area: "FOTUR";
+}
+
+.myndafmer {
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: cover;
+    object-position: center;
+}

@@ -4,10 +4,25 @@ body {
     grid-template-rows: repeat(3, auto);
     margin: 0 auto;
     grid-template-areas: "HAUS", "MEGIN", "FOTUR";
+    width: 95%;
+    max-width: 1440px;
 }
 
 .haus {
+    align-items: center;
     grid-area: "HAUS";
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    border-bottom: 1px solid black;
+}
+
+.haus h1 {
+    grid-column-end: span 6;
+}
+
+.haus nav {
+    grid-column-end: span 6;
+    justify-self: end;
 }
 
 .meginmal {
@@ -17,6 +32,12 @@ body {
 
 .fotur {
     grid-area: "FOTUR";
+    border-top: 1px solid black;
+}
+
+.fotur figure {
+    display: flex;
+    flex-direction: column;
 }
 
 .myndafmer {

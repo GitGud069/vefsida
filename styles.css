@@ -1,3 +1,24 @@
+/* Reset og border-box á allt */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* css stlyles */
+
+
+/* bukur skjals, hofud herdar og taer */
 body {
     display: grid;
     grid-template-columns: 1fr;
@@ -6,8 +27,10 @@ body {
     grid-template-areas: "HAUS", "MEGIN", "FOTUR";
     width: 95%;
     max-width: 1440px;
+
 }
 
+/* header/haus/hofud */
 .haus {
     align-items: center;
     grid-area: "HAUS";
@@ -17,19 +40,21 @@ body {
 }
 
 .haus h1 {
-    grid-column-end: span 6;
+    grid-column-end: span 10;
 }
 
 .haus nav {
-    grid-column-end: span 6;
+    grid-column-end: span 2;
     justify-self: end;
 }
 
+/* Meginmal */
 .meginmal {
     grid-area: "MEGIN";
     min-height: 100vh;
 }
 
+/* Fotur/taer */
 .fotur {
     grid-area: "FOTUR";
     border-top: 1px solid black;

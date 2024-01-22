@@ -13,3 +13,5 @@ Hvernig maður commitar á repoið í cli
 git add .
 git commit -m "skilaboð"
 git push -u origin main
+
+Did this workerino?
